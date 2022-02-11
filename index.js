@@ -104,7 +104,9 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
+function removeLastFlavor(array){
+  array.pop()
+  return array
  /*your code here*/
 }
 
@@ -122,6 +124,7 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 function getFlavorByIndex(/*your code here*/){
+  
   /*your code here*/
 }
 
@@ -141,7 +144,7 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
+function removeFlavorByName(array,string){
   /*your code here*/
 }
 
