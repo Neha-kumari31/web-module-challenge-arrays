@@ -178,17 +178,16 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(arr, string){
-  const filteredarr = []
-  for (let i; i<arr.length;i++){
-    if (arr[i].include(string)){
+  let filteredarr = []
+  for (let i=0; i<arr.length;i++){
+    if (arr[i].includes (string)){
       filteredarr.push(arr[i])
     }
-    return filteredarr
   }
-  /*your code here*/
+  return filteredarr/*your code here*/
 }
 
-
+console.log(filterByWord(originalFlavors,'chocalate'))
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
 /* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
